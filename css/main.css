@@ -1,0 +1,21 @@
+.jumbotron{
+  background-color: yellow;
+  color: black;
+}
+/* para darle el mismo ancho a las tarjetas de los hoteles */
+.card-hotel{
+  /* determinamos el ancho del elemento flex-wrap */
+  /* se coloca 1 para declarar que mantenga su ancho. 2 para que pueda ocupar el doble de su ancho */
+  flex: 1 150px;
+  padding: 2px 5px 2px 5px;
+  margin-top: 10px;
+}
+.btn-reserva{
+  width: 100%;
+}
+footer{
+  padding: 10px 10px 0 10px;
+  background-color: yellow;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}

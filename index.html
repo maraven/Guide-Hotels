@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
+		<link rel="stylesheet" href="css/main.css">
     <title>Guia Practica de Grillas</title>
   </head>
   <body>
@@ -15,7 +15,7 @@
 			<h1>Hoteles</h1>
 		</div>
 		<div class="container">
-			<div class="row">
+			<div class="d-flex">
 				<div class="col-sm-4">
 					<p>
 						<h3>¿Cómo funciona?</h3>
@@ -36,38 +36,95 @@
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-sm-3">
-					<p>
+			<div class="d-flex flex-wrap">
+				<div class="card-hotel d-flex flex-column justify-content-between">
+					<div>
 						<h4>Hotel Barcelona</h4>
 						<p>Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa</p>
-						<button class="btn">Reservar</button>
-					</p>
+					</div>
+					<div>
+						<button class="btn btn-primary btn-reserva">Reservar</button>
+					</div>
 				</div>
-				<div class="col-sm-3">
-					<p>
+				<div class="card-hotel d-flex flex-column justify-content-between">
+					<div>
 						<h4>Hotel Buenos Aires</h4>
 						<p>Hotel ubicado en el centro</p>
-						<button class="btn">Reservar</button>
-					</p>
+					</div>
+					<div>
+						<button class="btn btn-primary btn-reserva">Reservar</button>
+					</div>
 				</div>
-				<div class="col-sm-3">
-					<p>
+				<div class="card-hotel d-flex flex-column justify-content-between">
+					<div>
 						<h4>Hotel Lima</h4>
 						<p>Hotel ubicado en el centro</p>
-						<button class="btn">Reservar</button>
-					</p>
+					</div>
+					<div>
+						<button class="btn btn-primary btn-reserva">Reservar</button>
+					</div>
 				</div>
-				<div class="col-sm-3">
-					<p>
+				<div class="card-hotel d-flex flex-column justify-content-between">
+					<div>
 						<h4>Hotel Rio de Janeiro</h4>
 						<p>Hotel ubicado en pleno centro de Rio de Janeiro a pocos metros de la playa</p>
-						<button class="btn">Reservar</button>
-					</p>
+					</div>
+					<div>
+						<button class="btn btn-primary btn-reserva">Reservar</button>
+					</div>
 				</div>
-			</div>
+				<div class="card-hotel d-flex flex-column justify-content-between">
+					<div>
+						<h4>Hotel La Paz</h4>
+						<p>Hotel ubicado en el centro</p>
+					</div>
+					<div>
+						<button class="btn btn-primary btn-reserva">Reservar</button>
+					</div>
+				</div>
+				<div class="card-hotel d-flex flex-column justify-content-between">
+					<div>
+						<h4>Hotel Madrid</h4>
+						<p>Hotel ubicado en el centro</p>
+					</div>
+					<div>
+						<button class="btn btn-primary btn-reserva">Reservar</button>
+					</div>
+				</div>
+				<div class="card-hotel d-flex flex-column justify-content-between">
+					<div>
+						<h4>Hotel San Pablo</h4>
+						<p>Hotel ubicado en el centro</p>
+					</div>
+					<div>
+						<button class="btn btn-primary btn-reserva">Reservar</button>
+					</div>
+				</div>
 		</div>
 
+		<footer>
+			<div class="row">
+				<div class="col-sm-4 d-flex flex-column">
+					<a href="https://www.facebook.com/">facebook</a>
+					<a href="https://www.twitter.com/">twitter</a>
+					<a href="https://www.instagram.com/">Instagram</a>
+				</div>
+				<div class="col-sm-4">
+					<address>
+						<h4>Oficina Central</h4>
+						Avenida Siempreviva 742, Springfield, EE.UU 
+						+545455545454
+						contacto@guiahoteles.com
+					</address>
+				</div>
+				<div class="col-sm-4 d-flex flex-column align-items-end">
+					<a href="#">Nosotros</a>
+					<a href="#">Precios</a>
+					<a href="#">Terminos y Condiciones</a>
+					<a href="#">Contacto</a>
+				</div>
+			</div>
+		</footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
