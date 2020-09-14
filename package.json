@@ -4,6 +4,7 @@
   "description": "Nuestro primer proyecto de nodejs\u001b[D\u001b[D\u001b[D\u001b[D\u001b[N\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
   "main": "index.html",
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,5 +13,8 @@
   },
   "author": "Mariano Avendaño",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/m7ariano/guia-hoteles#readme"
+  "homepage": "https://bitbucket.org/m7ariano/guia-hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
