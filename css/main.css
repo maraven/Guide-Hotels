@@ -1,6 +1,7 @@
 .jumbotron{
   background-color: yellow;
   color: black;
+  margin-top: 50px;
 }
 /* para darle el mismo ancho a las tarjetas de los hoteles */
 .card-hotel{
