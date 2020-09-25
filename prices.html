@@ -40,55 +40,95 @@
 					<li class="breadcrumb-item active" aria-current="page">Precios</li>
 				</ol>
 			</nav>
-			<!-- Tabla de Precios -->
-			<div class="table-responsive">
-				<table class="table table-striped">
-					<thead class="thead-dark ">
-						<th>Calidad</th>
-						<th>Mar del Plata</th>
-						<th>Pinamar</th>
-						<th>San Clemente</th>
-						<th>Santa Teresita</th>
-					</thead>
-					<tbody>
-						<tr>
-							<td><span class="oi oi-star"></span></td>
-							<td>$100</td>
-							<td>$120</td>
-							<td>$150</td>
-							<td>$180</td>
-						</tr>
-						<tr>
-							<td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-							<td>$200</td>
-							<td>$220</td>
-							<td>$250</td>
-							<td>$280</td>
-						</tr>
-						<tr>
-							<td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-							<td>$300</td>
-							<td>$320</td>
-							<td>$350</td>
-							<td>$380</td>
-						</tr>
-						<tr>
-							<td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-							<td>$400</td>
-							<td>$420</td>
-							<td>$450</td>
-							<td>$480</td>
-						</tr>
-						<tr>
-							<td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-							<td>$500</td>
-							<td>$520</td>
-							<td>$550</td>
-							<td>$580</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>			
+			<!-- PESTAÑAS (TABS) -->
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item" role="presentation">
+					<a class="nav-link active" id="Compara-tab" data-toggle="tab" href="#Compara" role="tab" aria-controls="Compara" aria-selected="true">Compara</a>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a class="nav-link" id="Tarjetas-tab" data-toggle="tab" href="#Tarjetas" role="tab" aria-controls="Tarjetas" aria-selected="false">Tarjetas</a>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a class="nav-link" id="Comentarios-tab" data-toggle="tab" href="#Comentarios" role="tab" aria-controls="Comentarios" aria-selected="false">Comentarios</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="Compara" role="tabpanel" aria-labelledby="Compara-tab">
+					<!-- Tabla de Precios -->
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<thead class="thead-dark ">
+								<th>Calidad</th>
+								<th>Mar del Plata</th>
+								<th>Pinamar</th>
+								<th>San Clemente</th>
+								<th>Santa Teresita</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td><span class="oi oi-star"></span></td>
+									<td>$100</td>
+									<td>$120</td>
+									<td>$150</td>
+									<td>$180</td>
+								</tr>
+								<tr>
+									<td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+									<td>$200</td>
+									<td>$220</td>
+									<td>$250</td>
+									<td>$280</td>
+								</tr>
+								<tr>
+									<td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+									<td>$300</td>
+									<td>$320</td>
+									<td>$350</td>
+									<td>$380</td>
+								</tr>
+								<tr>
+									<td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+									<td>$400</td>
+									<td>$420</td>
+									<td>$450</td>
+									<td>$480</td>
+								</tr>
+								<tr>
+									<td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+									<td>$500</td>
+									<td>$520</td>
+									<td>$550</td>
+									<td>$580</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="Tarjetas" role="tabpanel" aria-labelledby="Tarjetas-tab">
+					<!-- Tabla Tarjetas -->
+					<div class="d-flex justify-content-center">
+						<div class="card" style="width: 18rem;">
+							<div class="card-header" style="color: white; background-color: blue;"  >
+							Tarjetas aceptadas
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">Tarjeta básica</li>
+								<li class="list-group-item">Tarjeta VIP</li>
+								<li class="list-group-item">Tarjeta Black</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="Comentarios" role="tabpanel" aria-labelledby="Comentarios-tab">
+					<form action="">
+						<div class="form-group">
+							<label for="exampleFormControlTextarea1">Escriba aquí su comentario</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Enviar</button>
+					</form>
+				</div>
+			</div>
 		</div>
 
 		<footer>
