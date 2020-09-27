@@ -40,21 +40,35 @@
 				</ol>
 			</nav>
 			<!-- DESCRIPCIÓN -->
-			<div class="d-flex flex-wrap">
-				<img src="images/banner.png" alt="banner page">
-				<div class="col-sm-4">
+			<div class="row">
+				<img src="images/banner.png" alt="banner page" class="img-fluid">
+				<div class="col-sm-3">
+					<button class="btn btn-primary" type="button" data-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">¿Cómo funciona?</button>
+				</div>
+				<div class="col-sm-3">
+					<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">¿Dónde puedo reservar?</button>
+				</div>
+				<div class="col-sm-3">
+					<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">¿Cómo pago?</button>
+				</div>
+				<div class="col-sm-3">
+					<button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3">...</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 collapse multi-collapse" id="multiCollapseExample1">
 					<p>
 						<h3>¿Cómo funciona?</h3>
 						<p>Busca los Hoteles de acuerdo a tu preferencia</p>
 					</p>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4 collapse multi-collapse" id="multiCollapseExample2">
 					<p>
 						<h3>¿Dónde puedo reservar?</h3>
 						<p>Elegi la ciudad que te interese y luego realizá la reserva con tus datos</p>
-					</p>
+					</p>	
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4 collapse multi-collapse" id="multiCollapseExample3">
 					<p>
 						<h3>¿Cómo pago?</h3>
 						<p>Utilizá tu tarjeta favorita</p>
