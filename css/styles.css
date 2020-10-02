@@ -1,0 +1,41 @@
+.jumbotron {
+  background-color: #edd224;
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 10px; }
+
+/* para darle el mismo ancho a las tarjetas de los hoteles */
+.card-hotel {
+  /* determinamos el ancho del elemento flex-wrap */
+  /* se coloca 1 para declarar que mantenga su ancho. 2 para que pueda ocupar el doble de su ancho */
+  flex: 1 200px;
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+.btn-reserva {
+  width: 100%;
+  border-radius: 0px; }
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #edd224;
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+.logotipos {
+  width: 1.2em; }
+
+.tab-content {
+  padding-top: 10px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0; }
+
+.carousel-inner {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0; }

@@ -1,0 +1,49 @@
+$yellow: #edd224;
+$red: #ba0016;
+$green:#45b554;
+@mixin margenes($top, $bottom){
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+@mixin padding($top, $bottom, $left, $right){
+  padding-top: $top;
+  padding-bottom: $bottom;
+  padding-left: $left;
+  padding-right: $right;
+}
+.jumbotron{
+  background-color: $yellow;
+  color: black;
+  @include margenes(50px, 10px);
+}
+/* para darle el mismo ancho a las tarjetas de los hoteles */
+.card-hotel{
+  /* determinamos el ancho del elemento flex-wrap */
+  /* se coloca 1 para declarar que mantenga su ancho. 2 para que pueda ocupar el doble de su ancho */
+  flex: 1 200px;
+  @include margenes(10px, 0px);
+
+}
+.btn-reserva{
+  width: 100%;
+  border-radius: 0px;
+}
+footer{
+  // padding: 10px 10px 0 10px;
+  @include padding(10px, 0px, 10px, 10px)
+  background-color: $yellow;
+  @include margenes(10px, 0px);
+
+}
+.logotipos{
+  width: 1.2em;
+}
+.tab-content{
+  // padding-top: 10px;
+  @include padding(10px, 0, 0, 0)
+}
+.carousel-inner{
+  // padding-bottom: 10px;
+  @include padding(0px, 10px, 0, 0)
+
+}
