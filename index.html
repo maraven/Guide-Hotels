@@ -4,11 +4,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
+		<!-- Bootstrap CSS -->
+		<!-- build:css /dist/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/styles.css">
 		<!-- ICONOS ICONIC -->
 		<link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+		<!-- endbuild -->
     <title>Guía Hoteles</title>
   </head>
   <body>
@@ -252,39 +254,19 @@
 		</footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<!-- build:js /dist/index.js -->
+		<!-- <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+		
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+
 		<!-- Para activar los tooltip y popover-->
-		<script>
-			$(function () {
-				$('[data-toggle="tooltip"]').tooltip();
-				$('[data-toggle="popover"]').popover();
-				$('.carousel').carousel({
-					interval: 1700
-					});
-				$('#contacto').on("show.bs.modal", function (e) {
-					console.log('El modal contacto se está ejecutando')
-
-					$('#ReservarBtn').removeClass('btn-primary');
-					$('#ReservarBtn').addClass('btn-outline-success');
-					$('#ReservarBtn').prop('disabled', true);
-				});
-				$('#contacto').on('shown.bs.modal', function (e) {
-					console.log('El modal contacto se ejecutó')
-				});
-				$('#contacto').on("hide.bs.modal", function (e) {
-					console.log('El modal contacto se oculta')
-				});
-				$('#contacto').on('hidden.bs.modal', function (e) {
-					console.log('El modal contacto se ocultó')
-					$('#ReservarBtn').removeClass('btn-outline-success');
-					$('#ReservarBtn').addClass('btn-primary');
-					$('#ReservarBtn').prop('disabled', false);
-
-				});	
-			});
-		</script>
-
+		<script src="./js/main.js"></script>
+		<!-- endbuild -->
 	</body>
 </html>

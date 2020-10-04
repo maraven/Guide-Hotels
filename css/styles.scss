@@ -30,7 +30,7 @@ $green:#45b554;
 }
 footer{
   // padding: 10px 10px 0 10px;
-  @include padding(10px, 0px, 10px, 10px)
+  @include padding(10px, 0px, 10px, 10px);
   background-color: $yellow;
   @include margenes(10px, 0px);
 
@@ -40,10 +40,10 @@ footer{
 }
 .tab-content{
   // padding-top: 10px;
-  @include padding(10px, 0, 0, 0)
+  @include padding(10px, 0, 0, 0);
 }
 .carousel-inner{
   // padding-bottom: 10px;
-  @include padding(0px, 10px, 0, 0)
+  @include padding(0px, 10px, 0, 0);
 
 }
